@@ -1,7 +1,7 @@
-package kz.zhelezyaka;
+package kz.zhelezyaka.example_1;
 
-import kz.zhelezyaka.config.AppConfig;
-import kz.zhelezyaka.controllers.LoginController;
+import kz.zhelezyaka.example_1.config.AppConfig;
+import kz.zhelezyaka.example_1.controllers.LoginController;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {

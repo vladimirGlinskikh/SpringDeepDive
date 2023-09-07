@@ -1,12 +1,12 @@
-package kz.zhelezyaka.config;
+package kz.zhelezyaka.example_1.config;
 
-import kz.zhelezyaka.controllers.LoginController;
+import kz.zhelezyaka.example_1.controllers.LoginController;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "kz.zhelezyaka.controllers")
+@ComponentScan(basePackages = "kz.zhelezyaka.example_1.controllers")
 public class AppConfig {
 
 //    @Bean
