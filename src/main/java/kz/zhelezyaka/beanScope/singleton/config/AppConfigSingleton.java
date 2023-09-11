@@ -6,5 +6,5 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan(basePackages = {"kz.zhelezyaka.beanScope.singleton.controllers",
                                "kz.zhelezyaka.beanScope.singleton.services"})
-public class AppConfig {
+public class AppConfigSingleton {
 }

@@ -1,16 +1,16 @@
 package kz.zhelezyaka.beanScope.singleton;
 
-import kz.zhelezyaka.beanScope.singleton.config.AppConfig;
+import kz.zhelezyaka.beanScope.singleton.config.AppConfigSingleton;
 import kz.zhelezyaka.beanScope.singleton.controllers.ProductController;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-        var context = new AnnotationConfigApplicationContext(AppConfig.class);
+        var contextSingleton = new AnnotationConfigApplicationContext(AppConfigSingleton.class);
 
-        ProductController controller1 = context.getBean(ProductController.class);
+        ProductController controller1 = contextSingleton.getBean(ProductController.class);
         controller1.setProductName("chatBot");
-        ProductController controller2 = context.getBean(ProductController.class);
+        ProductController controller2 = contextSingleton.getBean(ProductController.class);
         controller2.setProductName("webService");
 
         // Singleton подходит для stateless объектов, то есть для объектов,
@@ -32,6 +32,6 @@ public class Main {
 //        System.out.println(controller1);
 //        System.out.println(controller2);
 
-        context.close();
+        contextSingleton.close();
     }
 }
