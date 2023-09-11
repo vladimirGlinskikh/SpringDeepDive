@@ -1,6 +1,6 @@
-package kz.zhelezyaka.example_2.controllers;
+package kz.zhelezyaka.IoC_DI.example_2.controllers;
 
-import kz.zhelezyaka.example_2.services.ProductService;
+import kz.zhelezyaka.IoC_DI.example_2.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

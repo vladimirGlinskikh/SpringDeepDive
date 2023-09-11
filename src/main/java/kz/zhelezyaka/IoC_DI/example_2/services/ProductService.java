@@ -1,4 +1,4 @@
-package kz.zhelezyaka.example_2.services;
+package kz.zhelezyaka.IoC_DI.example_2.services;
 
 import org.springframework.stereotype.Component;
 
