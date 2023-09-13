@@ -1,6 +1,6 @@
-package kz.zhelezyaka.qualifier.controllers;
+package kz.zhelezyaka.qualifierAndValue.controllers;
 
-import kz.zhelezyaka.qualifier.services.ProductService;
+import kz.zhelezyaka.qualifierAndValue.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;

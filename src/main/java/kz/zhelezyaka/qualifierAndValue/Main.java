@@ -1,9 +1,9 @@
-package kz.zhelezyaka.qualifier;
+package kz.zhelezyaka.qualifierAndValue;
 
-import kz.zhelezyaka.qualifier.config.AppConfig;
-import kz.zhelezyaka.qualifier.controllers.FabricProduct;
-import kz.zhelezyaka.qualifier.controllers.ProductControllerChatBot;
-import kz.zhelezyaka.qualifier.controllers.ProductControllerWeb;
+import kz.zhelezyaka.qualifierAndValue.config.AppConfig;
+import kz.zhelezyaka.qualifierAndValue.controllers.FabricProduct;
+import kz.zhelezyaka.qualifierAndValue.controllers.ProductControllerChatBot;
+import kz.zhelezyaka.qualifierAndValue.controllers.ProductControllerWeb;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
@@ -14,10 +14,7 @@ public class Main {
         var chatBot = context.getBean(ProductControllerChatBot.class);
         var webService = context.getBean(ProductControllerWeb.class);
 
-        chatBot.setName("chatBot");
         System.out.println(chatBot.getName());
-
-        webService.setName("webService");
         System.out.println(webService.getName());
 
         chatBot.addProduct();

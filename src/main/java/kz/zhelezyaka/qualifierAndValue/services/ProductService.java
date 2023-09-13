@@ -1,4 +1,4 @@
-package kz.zhelezyaka.qualifier.services;
+package kz.zhelezyaka.qualifierAndValue.services;
 
 import org.springframework.stereotype.Service;
 
