@@ -14,6 +14,7 @@ import javax.persistence.*;
 public class Employee {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
@@ -25,4 +26,10 @@ public class Employee {
 
     @Column(name = "department")
     private String department;
+
+    public Employee(String firstname, String lastname, String department) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.department = department;
+    }
 }
