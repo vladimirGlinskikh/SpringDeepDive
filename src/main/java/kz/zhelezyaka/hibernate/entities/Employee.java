@@ -27,6 +27,10 @@ public class Employee {
     @Column(name = "department")
     private String department;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "details_id")
+    private Detail detail;
+
     public Employee(String firstname, String lastname, String department) {
         this.firstname = firstname;
         this.lastname = lastname;
