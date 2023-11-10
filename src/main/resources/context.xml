@@ -9,6 +9,8 @@
 
     <context:component-scan base-package="kz.zhelezyaka.xmlExample"/>
 
+    <bean class="kz.zhelezyaka.xmlExample.ProfilingHandlerBeanPostProcessor"/>
+
     <bean class="kz.zhelezyaka.xmlExample.InjectRandomIntAnnotationBeanPostProcessor"/>
 
     <bean class="kz.zhelezyaka.xmlExample.SMSBroker" id="smsBroker">

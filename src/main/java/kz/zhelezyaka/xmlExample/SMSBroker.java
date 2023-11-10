@@ -2,6 +2,7 @@ package kz.zhelezyaka.xmlExample;
 
 import javax.annotation.PostConstruct;
 
+@Profiling
 public class SMSBroker implements Broker {
     @InjectRandomInt(min = 2, max = 5)
     private int reiterate;
