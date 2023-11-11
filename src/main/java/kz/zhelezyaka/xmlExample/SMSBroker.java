@@ -19,7 +19,9 @@ public class SMSBroker implements Broker {
     }
 
     @Override
+    @PostProxy
     public void sms() {
+        System.out.println("Start constructor three phase");
         for (int i = 0; i < reiterate; i++) {
             System.out.println("sms: " + message);
         }
